@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='windows-1251'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:p="http://primefaces.org/ui">
+    <h:head>
+      <title>Проверка ФССП</title>
+      <h:outputStylesheet library="css" name="style_v2.css"/>    
+      <script type="text/javascript" src="resources/JavaScript/Script.js"></script>
+    </h:head>
+    <h:body>    
+    <p:outputPanel widgetVar="pers_head" deferred="true">
+    <div id="org_form">
+      <h:form id="form">
+        <table>
+          <tr>
+            <td>Номер паспорта:<font color="red">*</font></td>
+            <td>
+              <p:inputText id="fio" style="width: 400px;" maxlength="10" value="#{headMethod_fms.passport}"></p:inputText>  <!--<f:validateRegex pattern="^([а-яА-ЯЁё]|\s)+\s([а-яА-ЯЁё]|\s)+$"/> -->                   
+            </td>
+          </tr> 
+           <tr>
+          <tr>
+          <td><p:commandButton type="submit" value="Поиск" action="#{headMethod_fms.responsePassport()}" onclick="PF('loader').show()" oncomplete="PF('loader').hide()"/>
+            </td>
+            </tr>            
+          </tr>
+        </table> 
+        </h:form>
+    </div>      
+    <p:outputPanel widgetVar="result">    
+      <div>
+        <table class="table">             
+          <tbody>         
+            <h:outputText id="display" value="#{headMethod_fms.outHtml}" escape="false"/> 
+          </tbody> 
+        </table>                              
+      </div>
+    <p:dialog widgetVar="loader" minHeight="50" widht="110" draggable="false" closable="false" resizable="false" showEffect="fade" modal="false"
+      styleClass="loader" style="box-shadow: none !important"> 
+      <p:graphicImage value="resources/Image/loader.gif" widht="70" height="70"/>
+    </p:dialog> 
+    </p:outputPanel>
+    </p:outputPanel>    
+    </h:body>
+  </html>
+</f:view>

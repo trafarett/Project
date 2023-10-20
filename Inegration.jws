@@ -1,0 +1,525 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jws:workspace xmlns:jws="http://xmlns.oracle.com/ide/project">
+   <hash n="adrs-workspace-properties">
+      <value n="adrs-instance-binding" v="DefaultServer"/>
+      <value n="deploy-timeout" v="0"/>
+      <value n="runtime-application-name" v="Inegration"/>
+   </hash>
+   <hash n="adrs-workspace-weblogic-properties">
+      <value n="hot-class-reload" v="ide-default"/>
+   </hash>
+   <value n="appTemplateId" v="#genericApplicationTemplate"/>
+   <hash n="appWebServicePolicy">
+      <value n="location"/>
+      <value n="LOCATION_TYPE" v="policy.config.PolicyOptions.LocationType.FILE_STORE"/>
+      <value n="SERVER_LOCATION" v="IntegratedWebLogicServer"/>
+   </hash>
+   <hash n="component-versions">
+      <value n="oracle.adf.share.dt.migration.jps.JaznCredStoreMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.adf.share.dt.migration.wsm.PolicyAttachmentMigratorHelper" v="12.1.2.0.0"/>
+      <value n="oracle.adfdt.controller.adfc.source.migration.SavePointDataSourceForWLSMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.adfdtinternal.model.ide.security.extension.AdfSecurityMigrator" v="11.1.1.1.0.13"/>
+      <value n="oracle.ide.model.Project" v="11.1.1.1.0;12.2.1.4.0"/>
+      <value n="oracle.jbo.dt.jdevx.deployment.JbdProjectMigrator" v="11.1.2.0.0"/>
+      <value n="oracle.jdeveloper.maven.migrator.POMNodeMigrator" v="12.2.1.0.0"/>
+      <value n="oracle.jdevimpl.appresources.ApplicationSrcDirMigrator" v="11.1.2.0.0"/>
+      <value n="oracle.jdevimpl.deploy.migrators.JeeDeploymentMigrator" v="12.1.2.0.0"/>
+      <value n="oracle.jdevimpl.xml.oc4j.jps.JpsConfigMigratorHelper" v="12.1.4.0.0"/>
+      <value n="oracle.jdevimpl.xml.wl.WeblogicMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.mds.internal.dt.deploy.base.MarMigratorHelper" v="11.1.1.1.0"/>
+      <value n="oracle.mds.internal.dt.ide.migrator.MDSConfigMigratorHelper" v="11.1.1.0.5313"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.mds.internal.dt.ide.appresources.MDSAppResourceCSProvider/MDSAppContentSet"/>
+      <string v="oracle.jdeveloper.model.PathsConfiguration/ApplicationSrcContentSet"/>
+      <string v="oracle.jdeveloper.model.PathsConfiguration/ADFContentSet"/>
+      <string v="oracle.jdeveloper.model.PathsConfiguration/ApplicationBuildToolContentSet"/>
+      <string v="oracle.jdeveloper.model.PathsConfiguration/ResourceBundlesContentSet"/>
+   </list>
+   <list n="listOfChildren">
+      <hash><url n="URL" path="fssp_v2/fssp_v2.jpr"/></hash>
+   </list>
+   <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+      <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
+         <value n="defaultExecuteRadioButtonSelected" v="true"/>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.model.ApplicationLibraries">
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/annotations-13.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Annotations-13.0.jar"/>
+               <value n="id" v="Annotations-13.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/commons-io-2.11.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-io-2.11.0.jar"/>
+               <value n="id" v="Commons-io-2.11.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/commons-logging-1.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Commons-logging-1.2.jar"/>
+               <value n="id" v="Commons-logging-1.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/fontbox-2.0.25.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Fontbox-2.0.25.jar"/>
+               <value n="id" v="Fontbox-2.0.25.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jackson-annotations-2.12.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackson-annotations-2.12.1.jar"/>
+               <value n="id" v="Jackson-annotations-2.12.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jackson-core-2.12.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackson-core-2.12.1.jar"/>
+               <value n="id" v="Jackson-core-2.12.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jackson-core-asl-1.9.13.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackson-core-asl-1.9.13.jar"/>
+               <value n="id" v="Jackson-core-asl-1.9.13.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jackson-databind-2.12.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jackson-databind-2.12.1.jar"/>
+               <value n="id" v="Jackson-databind-2.12.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jai-imageio-core-1.4.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jai-imageio-core-1.4.0.jar"/>
+               <value n="id" v="Jai-imageio-core-1.4.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/javax.servlet-api-4.0.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Javax.servlet-api-4.0.1.jar"/>
+               <value n="id" v="Javax.servlet-api-4.0.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jbig2-imageio-3.0.4.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jbig2-imageio-3.0.4.jar"/>
+               <value n="id" v="Jbig2-imageio-3.0.4.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jboss-logging-3.1.4.GA.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-logging-3.1.4.GA.jar"/>
+               <value n="id" v="Jboss-logging-3.1.4.GA.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jboss-vfs-3.2.16.Final.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jboss-vfs-3.2.16.Final.jar"/>
+               <value n="id" v="Jboss-vfs-3.2.16.Final.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jna-5.10.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jna-5.10.0.jar"/>
+               <value n="id" v="Jna-5.10.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jsf-api-2.2.20.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jsf-api-2.2.20.jar"/>
+               <value n="id" v="Jsf-api-2.2.20.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jsf-impl-2.2.20.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jsf-impl-2.2.20.jar"/>
+               <value n="id" v="Jsf-impl-2.2.20.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/jstl-1.2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jstl-1.2.jar"/>
+               <value n="id" v="Jstl-1.2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/kotlin-stdlib-1.4.10.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Kotlin-stdlib-1.4.10.jar"/>
+               <value n="id" v="Kotlin-stdlib-1.4.10.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/kotlin-stdlib-common-1.4.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Kotlin-stdlib-common-1.4.0.jar"/>
+               <value n="id" v="Kotlin-stdlib-common-1.4.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/lept4j-1.16.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Lept4j-1.16.1.jar"/>
+               <value n="id" v="Lept4j-1.16.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/mysql-connector-java-8.0.23.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Mysql-connector-java-8.0.23.jar"/>
+               <value n="id" v="Mysql-connector-java-8.0.23.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/okhttp-4.9.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Okhttp-4.9.0.jar"/>
+               <value n="id" v="Okhttp-4.9.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/okio-2.8.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Okio-2.8.0.jar"/>
+               <value n="id" v="Okio-2.8.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/pdfbox-2.0.25.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Pdfbox-2.0.25.jar"/>
+               <value n="id" v="Pdfbox-2.0.25.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/pdfbox-debugger-2.0.25.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Pdfbox-debugger-2.0.25.jar"/>
+               <value n="id" v="Pdfbox-debugger-2.0.25.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/pdfbox-tools-2.0.25.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Pdfbox-tools-2.0.25.jar"/>
+               <value n="id" v="Pdfbox-tools-2.0.25.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/primefaces-10.0.0-RC2.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Primefaces-10.0.0-RC2.jar"/>
+               <value n="id" v="Primefaces-10.0.0-RC2.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/slf4j-api-1.7.30.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-api-1.7.30.jar"/>
+               <value n="id" v="Slf4j-api-1.7.30.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/slf4j-simple-1.7.32.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Slf4j-simple-1.7.32.jar"/>
+               <value n="id" v="Slf4j-simple-1.7.32.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/telegrambots-3.5.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Telegrambots-3.5.jar"/>
+               <value n="id" v="Telegrambots-3.5.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/telegrambots-6.0.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Telegrambots-6.0.1.jar"/>
+               <value n="id" v="Telegrambots-6.0.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/telegrambots-meta-6.0.1.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Telegrambots-meta-6.0.1.jar"/>
+               <value n="id" v="Telegrambots-meta-6.0.1.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/tess_from_vds/tess4j-4.5.4.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Tess4j-4.5.4.jar"/>
+               <value n="id" v="Tess4j-4.5.4.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/jsoup-1.15.3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jsoup-1.15.3.jar"/>
+               <value n="id" v="Jsoup-1.15.3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+         </list>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <value n="id" v="Annotations-13.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-io-2.11.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Commons-logging-1.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Fontbox-2.0.25.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackson-annotations-2.12.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackson-core-2.12.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackson-core-asl-1.9.13.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jackson-databind-2.12.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jai-imageio-core-1.4.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Javax.servlet-api-4.0.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jbig2-imageio-3.0.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-logging-3.1.4.GA.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jboss-vfs-3.2.16.Final.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jna-5.10.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsf-api-2.2.20.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsf-impl-2.2.20.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jstl-1.2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Kotlin-stdlib-1.4.10.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Kotlin-stdlib-common-1.4.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Lept4j-1.16.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Mysql-connector-java-8.0.23.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Okhttp-4.9.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Okio-2.8.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Pdfbox-2.0.25.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Pdfbox-debugger-2.0.25.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Pdfbox-tools-2.0.25.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Primefaces-10.0.0-RC2.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-api-1.7.30.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Slf4j-simple-1.7.32.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Telegrambots-3.5.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Telegrambots-6.0.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Telegrambots-meta-6.0.1.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Tess4j-4.5.4.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsoup-1.15.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <list n="modulePathLibraryReferences">
+         <hash>
+            <value n="id" v="Mysql-connector-java-8.0.23.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jsoup-1.15.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="ApplicationSrcContentSet">
+         <list n="pattern-filters">
+            <string v="+**"/>
+         </list>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
+      </hash>
+   </hash>
+   <hash n="oracle.mds.internal.dt.ide.CustOptions">
+      <list n="customizationLibraries">
+         <hash/>
+      </list>
+   </hash>
+   <hash n="ResourceBundleOptions">
+      <list n="RegisteredResourceBundles"/>
+   </hash>
+</jws:workspace>

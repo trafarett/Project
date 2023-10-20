@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<faces-config version="2.1" xmlns="http://java.sun.com/xml/ns/javaee">
+<managed-bean>
+    <managed-bean-name>headMethod</managed-bean-name>
+    <managed-bean-class>fssp.HeadMethod</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+  <managed-bean>
+    <managed-bean-name>headMethod_org</managed-bean-name>
+    <managed-bean-class>fssp.HeadMethod_Org</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+  <managed-bean>
+    <managed-bean-name>headMethod_org_frsb</managed-bean-name>
+    <managed-bean-class>frsb.HeadMethod_Org_frsb</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+   <managed-bean>
+    <managed-bean-name>headMethod_fms</managed-bean-name>
+    <managed-bean-class>fms.HeadMethod_fms</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+  <managed-bean>
+    <managed-bean-name>headMethod_fsspSite</managed-bean-name>
+    <managed-bean-class>fsspSite.HeadMethod</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+</faces-config>

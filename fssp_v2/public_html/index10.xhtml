@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='windows-1251'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+  <html xmlns="http://www.w3.org/1999/xhtml" xmlns:p="http://primefaces.org/ui">
+    <h:head>
+      <title>Проверка ФССП</title>
+      <h:outputStylesheet library="css" name="style_v2.css"/>    
+      <script type="text/javascript" src="resources/JavaScript/Script.js"></script>
+      <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    </h:head>
+    <h:body>
+    <div class="form_high" id="form_high">
+    <div>
+     <h:form id="form1">
+      <table>      
+        <tr style="width: 175px;">
+        <td>Фамилия:<font color="red">*</font></td>
+        <td><p:inputText id="surname" value="#{headMethod.surname}"/>
+        </td></tr>
+        <tr><td>Имя:<font color="red">*</font></td>
+        <td><p:inputText id="name" value="#{headMethod.name}"/>
+        </td></tr>
+        <tr><td>Отчество:</td>
+        <td><p:inputText id="secondname" value="#{headMethod.secondname}"/>
+        </td></tr>
+        <tr>
+        <td>Дата рождения: <font color="red">*</font></td>
+        <td><p:inputMask id="dr" value="#{headMethod.birthdate}" mask="99.99.9999" />
+        </td></tr>
+        <tr><td>Регион: </td><td><select name="region" disabled=""><option value="0">Все регионы</option></select></td></tr>
+        <tr><td><font color="red">* Поля обязательные для заполения</font></td></tr>
+        <tr><td><p:commandButton type="submit" value="Поиск" action="#{headMethod.response(0)}" onclick="PF('loader').show()" oncomplete="PF('loader').hide()"/>
+        <p:commandButton type="submit" value="Очистить" action="#{headMethod.clear}"/></td></tr>
+      </table>
+      </h:form>
+      </div>
+      <div>
+      <h:form id="form2">
+        <table>
+        <tbody>
+          <tr>
+            <td>ФИО:<font color="red">*</font>
+            </td>
+            <td>
+             <p:inputText id="fio" value="#{headMethod.fio}" style="width: 450px;"></p:inputText>  <!--<f:validateRegex pattern="^([а-яА-ЯЁё]|\s)+\s([а-яА-ЯЁё]|\s)+$"/> -->                   
+            </td>
+            <td style="display:none">
+            <img onclick="readClipboard()" style="width: 23px; vertical-align: bottom; cursor: pointer" src="resources/Image/icons8-import-30.png" alt="Вставить из буфера обмена"></img>
+            </td>
+          </tr>
+          <tr>
+            <td>Дата рождения: <font color="red">*</font></td>
+            <td><p:inputMask id="fio_dr" value="#{headMethod.birthdate_fio}" mask="99.99.9999"/></td>
+          </tr>  
+          </tbody>         
+          <tbody>
+          <tr>
+           <td><p:commandButton styleClass="button" process="@all" type="submit" onclick="PF('loader').show()" oncomplete="PF('loader').hide()" value="Поиск" action="#{headMethod.response(1)}"/></td> <!--onclick="PF('loader').show()"  onstart="PF('loader').show()"-->
+          </tr> 
+          </tbody>          
+        </table> 
+        </h:form>
+        </div>
+    </div>   
+    <p:outputPanel widgetVar="result">    
+      <div>                     
+        <div>       
+          <h:outputText id="display" value="#{headMethod.outHtml}" escape="false"/> 
+        </div>        
+        <h:form>
+          <table id="capcha" style="display:none">
+            <tr>
+              <td>        
+                <p:inputText id="incapcha" value="#{headMethod.capcha}"/>
+              </td>
+              <td>
+                <p:commandButton styleClass="button" process="@all" type="submit" value="Отправить" action="#{headMethod.capcha}" onclick="PF('loader').show()" oncomplete="PF('loader').hide()"/>                       
+              </td>
+            </tr>
+          </table>
+        </h:form>        
+      </div>
+    <p:dialog widgetVar="loader" minHeight="50" widht="110" draggable="false" closable="false" resizable="false" showEffect="fade" modal="false"
+      styleClass="loader" style="box-shadow: none !important"> 
+      <p:graphicImage value="resources/Image/loader.gif" widht="70" height="70"/>
+    </p:dialog> 
+    </p:outputPanel>   
+    </h:body>
+  </html>
+</f:view>
