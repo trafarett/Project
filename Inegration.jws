@@ -353,6 +353,24 @@
                <value n="id" v="Jsoup-1.15.3.jar"/>
                <value n="locked" v="true"/>
             </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/jedis-5.0.0.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jedis-5.0.0.jar"/>
+               <value n="id" v="Jedis-5.0.0.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
+            <hash>
+               <list n="classPath">
+                  <url path="../../lib/jedis-4.4.3.jar" jar-entry=""/>
+               </list>
+               <value n="deployedByDefault" v="true"/>
+               <value n="description" v="Jedis-4.4.3.jar"/>
+               <value n="id" v="Jedis-4.4.3.jar"/>
+               <value n="locked" v="true"/>
+            </hash>
          </list>
       </hash>
       <list n="libraryReferences">
@@ -492,6 +510,14 @@
             <value n="id" v="Jsoup-1.15.3.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
+         <hash>
+            <value n="id" v="Jedis-5.0.0.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jedis-4.4.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
       </list>
       <list n="modulePathLibraryReferences">
          <hash>
@@ -500,6 +526,10 @@
          </hash>
          <hash>
             <value n="id" v="Jsoup-1.15.3.jar"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="Jedis-4.4.3.jar"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>

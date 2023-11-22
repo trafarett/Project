@@ -3,6 +3,8 @@ package fsspSite;
 import fssp.*;
 
 import java.io.Serializable;
+
+import java.net.URLDecoder;
 import java.net.URLEncoder;
 
 import java.util.ArrayList;
@@ -73,13 +75,14 @@ public class HeadMethod implements Serializable
   public String getPage(){return page;}
   public void setPage (String page){this.page=page;} 
   
-  private String URL ="https://is-node7.fssp.gov.ru/ajax_search?";
+  private String URL ="https://is-node4.fssp.gov.ru/ajax_search?";
   
   public void response(int param,String url) throws Exception
    { 
     OutHttpRequest response=new OutHttpRequest();   
     OutHtmlResult resultHtml=new OutHtmlResult();
     DataBases_v2 db=new DataBases_v2();    
+    //DataBases_fsspSite db_fsspSite=new DataBases_fsspSite();
     WorkClass_fsspSite workClass_fsspSite=new WorkClass_fsspSite();    
     String zapros,html;
     String surname_req,name_req,secondname_req,birthdate_req;
@@ -142,8 +145,7 @@ public class HeadMethod implements Serializable
         sid=response.getSid();
         if(response.getResul().equals("captcha"))
         {
-         outImageCaptcha=workClass_fsspSite.parseCaptcha(html);
-         //PrimeFaces.current().ajax().update("@widgetVar(loader)"); 
+         outImageCaptcha=workClass_fsspSite.parseCaptcha(html);                         
          PrimeFaces.current().ajax().update("@widgetVar(captcha)");  
          PrimeFaces.current().executeScript("PF('captcha').show();");
          }
@@ -153,7 +155,12 @@ public class HeadMethod implements Serializable
          outHtml+=resultHtml.getHtml();
          this.listHtml=resultHtml.getListPages();
          PrimeFaces.current().ajax().update("@widgetVar(pages)");
-         PrimeFaces.current().ajax().update("@widgetVar(result)");  
+         PrimeFaces.current().ajax().update("@widgetVar(result)");
+         // Сохранение капчи //       
+         Runnable runnable;
+         runnable=new DataBases_Captcha_Thread(captcha,outImageCaptcha);
+         new Thread(runnable).start();         
+         /////////////////////
          }       
         }
        else
